@@ -1,25 +1,29 @@
 import logo from './logo.svg';
 import './App.css';
 
-function App() {
+// src/App.js
+import React, { useState } from 'react';
+import Customer from './components/Customer';
+import Orders from './components/Order';
+import Suppliers from './components/Supplier';
+
+const App = () => {
+  const [activeTab, setActiveTab] = useState('customers');
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1>Organizer App</h1>
+      <div class>
+        <button onClick={() => setActiveTab('customers')}>Customers</button>
+        <button onClick={() => setActiveTab('orders')}>Orders</button>
+        <button onClick={() => setActiveTab('suppliers')}>Suppliers</button>
+      </div>
+
+      {activeTab === 'customers' && <Customer />}
+      {activeTab === 'orders' && <Orders />}
+      {activeTab === 'suppliers' && <Suppliers />}
     </div>
   );
-}
+};
 
 export default App;

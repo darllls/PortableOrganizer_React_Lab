@@ -36,3 +36,116 @@
     transform: rotate(360deg);
   }
 }
+
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f8ff; /* Light Blue Background */
+  display: flex;
+  justify-content: center; /* Centering Content Horizontally */
+  align-items: center; /* Centering Content Vertically */
+  text-align: center;
+  min-height: 100vh;
+}
+
+.container {
+  width: 80%;
+  background-color: #ffffff; /* White Container Background */
+  padding: 20px;
+  border-radius: 12px; /* Rounding the Container */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center; /* Centering the Container Content */
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+}
+
+.tab-buttons {
+  text-align: center; /* Centering the Tab Buttons */
+  margin-bottom: 20px;
+}
+
+.button-container {
+  text-align: center;
+}
+
+
+button {
+  background-color: #87cefa; /* Light Sky Blue Button Background */
+  color: #fff;
+  padding: 10px 15px;
+  margin: 5px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #6495ed; /* Cornflower Blue Hover Background */
+}
+
+table {
+  width: 80%; /* Adjust as needed */
+  margin: 20px auto; /* Centering the Table */
+  border-collapse: collapse;
+  border: 2px solid #87cefa; /* Light Sky Blue Table Border */
+  border-radius: 8px; /* Rounding the Table */
+}
+
+th, td {
+  padding: 20px; /* Reduced padding for table cells */
+  text-align: center; /* Centering Table Cells */
+  border-bottom: 1px solid #87cefa;
+  border-right: 1px dotted #87cefa; /* Light Sky Blue Table Border Bottom */
+}
+
+th {
+  background-color: #87cefa; /* Light Sky Blue Table Header Background */
+  color: #fff;
+}
+
+td{
+  height: 10px;
+}
+tr:hover {
+  background-color: #f0f8ff; /* Light Blue Hover Background */
+}
+
+form {
+  width: 80%; /* Adjust as needed */
+  margin: 20px auto; /* Centering the Form */
+  text-align: left;
+}
+
+label {
+  margin-bottom: 8px;
+  display: block;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 12px;
+  border: 1px solid #87cefa; /* Light Sky Blue Input Border */
+  border-radius: 4px;
+}
+
+button[type="submit"] {
+  background-color: #87cefa; /* Light Sky Blue Submit Button Background */
+  color: #fff;
+  cursor: pointer;
+  
+}
+
+button[type="submit"]:hover {
+  background-color: #6495ed; /* Cornflower Blue Submit Hover Background */
+}
+
